@@ -14,7 +14,7 @@ int main()
     cout << "Hello CSC 134!" << endl;
     //Creating a variable
     string name;
-    cout << "What's your name ";
+    cout << "What's your name? ";
     cin >> name; //Reads the next input and assigns it to the listed variable
 
     cout << "This program is for : " << name << endl;
