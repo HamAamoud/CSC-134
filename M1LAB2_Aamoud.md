@@ -22,4 +22,4 @@
 15. Close the peanut butter.
 
 ## Done When
-The sandwich is finished.
+The sandwich is ordered bread, peanut butter, bread. The sandwich is on the table.
