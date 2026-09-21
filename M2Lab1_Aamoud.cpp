@@ -1,8 +1,8 @@
 /*
 CSC 134
-M1Lab
+M2Lab1
 Hamza Aamoud
-8/20/16
+9/21/16
 */
 #include <iostream>
 
