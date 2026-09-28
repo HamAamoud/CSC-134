@@ -23,7 +23,7 @@ int main() {
 
     //Setting max roll per die and initializing dice
     const int MAX = 6;
-    int roll1, roll2, total;
+    int roll1, roll2, total, point;
 
     //Rolling , If rand outputs 6, roll = 1
     roll1 = (rand() % MAX) + 1;
@@ -31,7 +31,7 @@ int main() {
     total = roll1 + roll2;
 
     cout << "You rolled a " << roll1 << " and a " << roll2 <<endl;
-    cout << "Your total is " << total << endl;
+    cout << "Your total is : " << total << endl;
 
     if (total == 7) {
         cout << "LUCKY 7 YOU WIN!!!";
@@ -48,5 +48,9 @@ int main() {
     else if (total == 3) {
         cout << "Unlucky 3, you lose :(";
     }
+
+    point = total;
+    cout << "Your point is : " << point << endl;
+    
     return 0;
 }
