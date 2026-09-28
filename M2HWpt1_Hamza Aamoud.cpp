@@ -11,7 +11,7 @@ int main()
     //Initializing variables
     double startBalance, withdrawal, deposit, endBalance;
     string name;
-    double accountNumber;
+    int accountNumber;
 
     //Taking User info
     cout << "Hello, Welcome To Ham Bank United";
@@ -30,11 +30,12 @@ int main()
 
     //Math
     endBalance = startBalance - withdrawal + deposit;
-    accountNumber = startBalance*600 - name.length()*6;
+    accountNumber = startBalance * 600 - name.length() * 6;
 
     //Print out
     cout << "Account User    : " << name << endl;
     cout << "Account Number  : " << accountNumber << endl;
+    cout << setprecision(2) << fixed << showpoint;
     cout << "Initial Balance : $" << startBalance << endl;
     cout << "Final Balance   : $" << endBalance << endl;
 }
