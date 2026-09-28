@@ -6,6 +6,7 @@ using namespace std;
 
 int main()
 {
+    cout << "Question 3" << endl;
     //Setting Constant
     const int SLICES_PER_VISITOR = 3;
 

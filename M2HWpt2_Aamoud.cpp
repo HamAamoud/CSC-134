@@ -7,6 +7,7 @@ using namespace std;
 
 int main()
 {
+    cout << "Question 2" << endl;
     //Setting cost/charge ratios as constant
     const double COST_PER_FT_CUBED = 0.3;
     const double MAX_CHARGE_PER_FT_CUBED = 0.52;

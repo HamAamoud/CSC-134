@@ -8,6 +8,7 @@ using namespace std;
 
 int main()
 {
+    cout << "Question 1" << endl;
     //Initializing variables
     double startBalance, withdrawal, deposit, endBalance;
     string name;
