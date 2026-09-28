@@ -38,4 +38,6 @@ int main()
     cout << setprecision(2) << fixed << showpoint;
     cout << "Initial Balance : $" << startBalance << endl;
     cout << "Final Balance   : $" << endBalance << endl;
+
+    return 0;
 }
