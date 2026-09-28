@@ -6,6 +6,7 @@
 // Find the area
 
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 
