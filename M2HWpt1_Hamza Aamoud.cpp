@@ -16,7 +16,7 @@ int main()
     //Taking User info
     cout << "Hello, Welcome To Ham Bank United";
     cout << "Please enter you name: ";
-    cin >> name;
+    getline(cin, name);
     cout << "Enter initial balance and desired withdrawal and/or deposit" << endl;
     cout << "Initial: $";
     cin >> startBalance;
