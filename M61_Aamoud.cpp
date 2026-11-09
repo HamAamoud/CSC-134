@@ -55,12 +55,14 @@ void method3 (){
         string item = "Warframe";
     cout << "Count how many " << item << " were seen each day." << endl;
     const int SIZE = 5;
-    int counts [SIZE];
+    int counts [SIZE] = {0,0,0,0,0};
     int total = 0;
-    for (int i = 0; i < SIZE ; i++) {
-        cout << "Day " << i + 1 << ": ";
-        cin >> counts [i];
-        total += counts[i];
+    for (int &count : counts) {
+        int i = 1;
+        cout << "Day " << i << ": ";
+        cin >> count;
+        total += count;
+        i++;
     }
     cout << "Total " << item << " seen: " << total << endl;
     double average = total / SIZE;
