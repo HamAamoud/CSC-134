@@ -6,8 +6,6 @@
 
 #include <iomanip>
 #include <iostream>
-#include <cmath>
-#include <ctime>
 using namespace std;
 
 void q1 ();
