@@ -6,6 +6,7 @@
 
 #include <iomanip>
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 void q1 ();
@@ -151,9 +152,94 @@ void q3 (){
 }
 
 void q4 (){
-    
+    int shapeChoice = 0;
+    cout << "The Area Area" << endl << "Pick A shape" << endl << "1 ) Circle" << endl << "2 ) Rectangle" << endl << "3 ) Triangle" << endl << "4 ) Quit" << endl;
+    while (shapeChoice != 1 && shapeChoice != 2 && shapeChoice != 3 && shapeChoice != 4) {
+        cin >> shapeChoice;
+        if (shapeChoice != 1 && shapeChoice != 2 && shapeChoice != 3 && shapeChoice != 4) {
+            cout << "Please enter one of the choices above" << endl;
+        }
+        if (shapeChoice == 1) {
+            cout << "Circle selected - Enter Radius : ";
+            double radius = 0;
+            while (radius <= 0) {
+                cin >> radius;
+                if (radius <= 0) {
+                    cout << "Please enter positive value for radius" << endl;
+                }
+            }
+            double area = radius * radius * 3.14159;
+            cout << "Your area is : " << area << endl;
+        }
+        else if (shapeChoice == 2) {
+            cout << "Rectangle selected" << endl;
+            double length = 0;
+            cout << "Enter Length : ";
+            while (length <= 0) {
+                cin >> length;
+                if (length <= 0) {
+                    cout << "Enter a positive number please" << endl;
+                }
+            }
+            double width = 0;
+            cout << "Enter Width : ";
+            while (width <= 0) {
+                cin >> width;
+                if (width <= 0) {
+                    cout << "Enter a positive number please" << endl;
+                }
+            }
+            double area = width * length;
+            cout << "Your area is " << area << endl;
+        }
+        else if (shapeChoice == 3) {
+            cout << "Triangle area" << endl;
+            double length = 0;
+            cout << "Enter Length : ";
+            while (length <= 0) {
+                cin >> length;
+                if (length <= 0) {
+                    cout << "Enter a positive number please" << endl;
+                }
+            }
+            double width = 0;
+            cout << "Enter Width : ";
+            while (width <= 0) {
+                cin >> width;
+                if (width <= 0) {
+                    cout << "Enter a positive number please" << endl;
+                }
+            }
+            double area = width * length * 0.5;
+            cout << "Your area is " << area << endl;
+            
+        }
+    }
 }
 
 void q5 () {
-
+    cout << "Trip Tracker" << endl;
+    int speed = 0, time = 0;
+    cout << "Enter Speed : ";
+    while (speed <= 0) {
+        cin >> speed;
+        if (speed <= 0) {
+            cout << "Enter a positive integer" << endl;
+        }
+    }
+    cout << "Enter time : ";
+    while (time <= 0) {
+        cin >> time;
+        if (time <= 0) {
+            cout << "Enter a positive integer" << endl;
+        }
+    }
+    int traveled;
+    cout << "Hour  Distance" << endl;
+    int loopNum = 1;
+    while (loopNum <= time){
+        traveled = loopNum * speed;
+        cout << loopNum << "     " << traveled << endl;
+        loopNum ++;
+    }
 }
