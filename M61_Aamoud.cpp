@@ -8,10 +8,12 @@
 using namespace std;
 
 void method1 ();
-void method2();
+void method2 ();
+void method3 ();
 int main () {
     method1 ();
     method2 ();
+    method3 ();
     return 0;
 }
 
@@ -46,5 +48,26 @@ void method2 (){
     cout << "Average per day : " << average << endl;
     for (int i = 0; i < SIZE; i++){
         cout << "Day " << i + 1 << ": " << counts[i] << endl;
+    }
+}
+
+void method3 (){
+        string item = "Warframe";
+    cout << "Count how many " << item << " were seen each day." << endl;
+    const int SIZE = 5;
+    int counts [SIZE];
+    int total = 0;
+    for (int i = 0; i < SIZE ; i++) {
+        cout << "Day " << i + 1 << ": ";
+        cin >> counts [i];
+        total += counts[i];
+    }
+    cout << "Total " << item << " seen: " << total << endl;
+    double average = total / SIZE;
+    cout << "Average per day : " << average << endl;
+    for (int count : counts){
+        int i = 1;
+        cout << "Day " << i << ": " << count << endl;
+        i++;
     }
 }
